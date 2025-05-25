@@ -128,11 +128,11 @@ async def start(event, args, client):
             [
                 Button.url(
                     "Source-Code (Original)",
-                    url="github.com/1Danish-00/compressorqueue",
+                    url="github.com/Nubuki-all/Enc",
                 ),
-                Button.url("Developer (Original)", url="t.me/danish_00"),
+                Button.url("Developer (Original)", url="t.me/Col_serra"),
             ],
-            [Button.url("Fork Maintainer", url="t.me/Col_serra")],
+            [Button.url("Fork Maintainer", url="t.me/SamXD7")],
         ],
     )
 
@@ -181,11 +181,11 @@ async def beck(event):
             [
                 Button.url(
                     "Source-Code (Original)",
-                    url="github.com/1Danish-00/compressorqueue",
+                    url="github.com/Nubuki-all/Enc",
                 ),
-                Button.url("Developer (Original)", url="t.me/danish_00"),
+                Button.url("Developer (Original)", url="t.me/Col_serra"),
             ],
-            [Button.url("Fork Maintainer", url="t.me/Col_serra")],
+            [Button.url("Fork Maintainer", url="t.me/SamXD7")],
         ],
     )
 
