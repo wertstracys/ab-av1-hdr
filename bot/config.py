@@ -52,7 +52,7 @@ class Config:
             self.FCODEC = config("FCODEC", default=None)
             self.FFMPEG = config(
                 "FFMPEG",
-                default='ab-av1 auto-encode -i "{}" --svt tune=0 --max-crf 70 --min-vmaf 88 --preset 6 --vfilter scale=1280:-2 -o "{}"',
+                default='ab-av1 auto-encode -i "{}" --svt tune=0 --max-crf 70 --min-vmaf 86 --preset 6 --vfilter scale=-2:480 -o "{}"',
             )
             self.FFMPEG2 = config("FFMPEG2", default=None)
             self.FFMPEG3 = config("FFMPEG3", default=None)
