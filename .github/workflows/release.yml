@@ -2,7 +2,7 @@ name: ci
 
 on:
   schedule:
-    - cron: '0 17 * * *'
+    - cron: '0 3 * * *'
   push:
     branches:
       - 'main'
@@ -34,16 +34,10 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
-        name: Get current date
-        id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
-      -
         name: Build and push
         uses: docker/build-push-action@v6
         with:
           context: .
           platforms: linux/amd64
           push: true
-          # tags: encodev/svtav1enc:latest
-          # tags: encodev/svtav1enc:psy
           tags: encodev/svtav1enc:hdr
