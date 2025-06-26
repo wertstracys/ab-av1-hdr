@@ -93,9 +93,7 @@ class Config:
             self.TELEGRAPH_API = config(
                 "TELEGRAPH_API", default="https://api.telegra.ph"
             )
-            self.TELEGRAPH_AUTHOR = config(
-                "TELEGRAPH_AUTHOR", default="QVA-FLiX|https://t.me/SamXD7"
-            )
+            self.TELEGRAPH_AUTHOR = config("TELEGRAPH_AUTHOR", default=None)
             self.TEMP_USER = config("TEMP_USERS", default=str())
             self.TG_DL_CLIENT = config("TG_DL_CLIENT", default="pyrogram")
             self.TG_UL_CLIENT = config("TG_UL_CLIENT", default="pyrogram")
