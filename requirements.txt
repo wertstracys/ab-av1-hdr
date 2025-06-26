@@ -2,26 +2,27 @@ aiohttp
 anitopy
 apscheduler
 aria2p
-country-converter
+country_converter
 emoji-country-flag
 feedparser
-html-telegraph-poster
+html_telegraph_poster
 humanize
-kurigram
 lxml[html_clean]
+telethon==1.38
+tgcrypto
 psutil
 pycountry
 pymediainfo
 pymongo[srv]
+kurigram
 python-decouple
 qbittorrent-api
 quote
 random_word
-telethon==1.38
-tgcrypto
 tzlocal
 yt-dlp
-certifi>=2025.4.26
-dnspython>=2.7.0
-requests>=2.32.4
-setuptools>=80.9.0
+#Snyk pins 
+certifi>=2023.7.22 # not directly required, pinned by Snyk to avoid a vulnerability
+dnspython>=2.6.0rc1 # not directly required, pinned by Snyk to avoid a vulnerability
+requests>=2.32.0 # not directly required, pinned by Snyk to avoid a vulnerability
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
