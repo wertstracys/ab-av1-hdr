@@ -52,7 +52,7 @@ class Config:
             self.FCODEC = config("FCODEC", default=None)
             self.FFMPEG = config(
                 "FFMPEG",
-                default='ab-av1 auto-encode -i "{}" --svt tune=0 --max-crf 70 --min-vmaf 86 --preset 6 --vfilter scale=-2:480 -o "{}"',
+                default='ab-av1 auto-encode -i "{}" --svt tune=0 --max-crf 70 --min-vmaf 83 --preset 7 --vfilter scale=-2:480 -o "{}"',
             )
             self.FFMPEG2 = config("FFMPEG2", default=None)
             self.FFMPEG3 = config("FFMPEG3", default=None)
@@ -70,7 +70,7 @@ class Config:
             self.MI_CAP = config("MI_IN_CAPTION", default=True, cast=bool)
             self.MUX_ARGS = config(
                 "MUX_ARGS",
-                default='-c:v copy -c:a libopus -b:a 64k -ac 2 -metadata title=""',
+                default='-c:v copy -c:a libopus -b:a 32k -ac 2 -metadata title=""',
             )
             self.NO_BANNER = config("NO_BANNER", default=False, cast=bool)
             self.NO_TEMP_PM = config("NO_TEMP_PM", default=False, cast=bool)
