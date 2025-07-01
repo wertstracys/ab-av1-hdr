@@ -2,8 +2,8 @@
 FROM fedora:37
 
 # Setup home directory, non interactive shell and timezone
-RUN mkdir -p /bot /tgenc && chmod 777 /bot
-WORKDIR /bot
+RUN mkdir -p /usr/src/app && chmod -R 777 /usr
+WORKDIR /usr/src/app
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=America/Havana
 ENV TERM=xterm
@@ -23,4 +23,4 @@ RUN pip3 install -r requirements.txt && \
     pip cache purge
 
 # Cleanup
-RUN rm -rf fonts scripts .env* .git* Dockerfile License *.md requirements* srun* update*
+RUN rm -rf fonts scripts .env* .git* Dockerfile License *.md requirements.txt srun* update*
