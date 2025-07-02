@@ -9,7 +9,7 @@ ENV TZ=America/Havana
 ENV TERM=xterm
 
 # Install Dependencies
-RUN dnf -qq -y update && dnf -qq -y install gcc git python3-devel aria2 bash xz zstd wget curl pv jq python3-pip mediainfo psmisc procps-ng qbittorrent-nox && dnf clean all && python3 -m pip install --upgrade pip setuptools
+RUN dnf -qq -y update && dnf -qq -y install aria2 bash curl gcc git jq mediainfo procps-ng psmisc pv python3-devel python3-pip qbittorrent-nox wget xz zstd && dnf clean all && python3 -m pip install --upgrade pip setuptools
 
 # Install latest ffmpeg and ab-av1
 RUN wget -q https://github.com/QuickFatHedgehog/FFmpeg-Builds-SVT-AV1-HDR/releases/download/latest/ffmpeg-n7.1-latest-linux64-gpl-7.1.tar.xz && tar -xvf *xz && cp *7.1/bin/* /usr/bin && rm -rf ffmpeg* && \
