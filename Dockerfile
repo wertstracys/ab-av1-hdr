@@ -1,5 +1,5 @@
 # Base Image 
-FROM fedora:42
+FROM fedora:41
 
 # Setup home directory, non interactive shell and timezone
 RUN mkdir -p /usr/src/app && chmod -R 777 /usr
