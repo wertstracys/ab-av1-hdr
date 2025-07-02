@@ -2,8 +2,8 @@
 FROM fedora:42
 
 # Setup home directory, non interactive shell and timezone
-RUN mkdir -p /usr/src/app && chmod -R 777 /usr
-WORKDIR /usr/src/app
+RUN mkdir -p /bot /tgenc && chmod -R 777 /usr /bot /tgenc
+WORKDIR /bot
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=America/Havana
 ENV TERM=xterm
