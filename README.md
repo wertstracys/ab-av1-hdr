@@ -3,8 +3,8 @@
 ---
 ```
 FROM encodev/svtav1enc:hdr
-WORKDIR /bot
-RUN chmod -R 777 /bot
+WORKDIR /usr/src/app
+RUN chmod -R 777 /usr
 COPY .env .
 CMD ["bash", "run.sh"]
 ```
