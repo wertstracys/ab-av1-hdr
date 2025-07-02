@@ -7,18 +7,18 @@ emoji-country-flag
 feedparser
 html_telegraph_poster
 humanize
+kurigram
 lxml[html_clean]
-telethon==1.38
-tgcrypto
 psutil
 pycountry
 pymediainfo
 pymongo[srv]
-kurigram
 python-decouple
 qbittorrent-api
 quote
 random_word
+telethon==1.38
+tgcrypto
 tzlocal
 yt-dlp
 #Snyk pins 
