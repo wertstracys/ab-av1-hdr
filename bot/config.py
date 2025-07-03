@@ -70,7 +70,7 @@ class Config:
             self.MI_CAP = config("MI_IN_CAPTION", default=True, cast=bool)
             self.MUX_ARGS = config(
                 "MUX_ARGS",
-                default="-c:v copy -c:a libopus -b:a 32k -ac 2 -map_metadata -1",
+                default="-c:v copy -c:a libopus -b:a 32k -ac 2 -map_metadata 0",
             )
             self.NO_BANNER = config("NO_BANNER", default=False, cast=bool)
             self.NO_TEMP_PM = config("NO_TEMP_PM", default=False, cast=bool)
