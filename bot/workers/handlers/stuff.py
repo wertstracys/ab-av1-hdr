@@ -273,17 +273,109 @@ async def icommands(event):
     conf.CMD_SUFFIX or str()
     await event.edit(
         """`
+# Don't use quotes( " and ' )
+
 APP_ID=
 API_HASH=
 BOT_TOKEN=
 OWNER=
 
-#LOG_CHANNEL=
-DBNAME=
-DATABASE_URL=
+# [OPTIONAL]
+# Uncomment (remove the '#') the below variables before adding their values
 
+#FFMPEG=
+#Encode commands to execute in sequence
+#FFMPEG2=
+#FFMPEG3=
+#FFMPEG4=
+
+#MUX_ARGS=  #arguements passed to ffmpeg to mux encoded content.
+
+#TEMP_USERS
+#THUMBNAIL=
+#CACHE_DL=
+#ENCODER=
+#LOG_CHANNEL=
+#LOGS_IN_CHANNEL=True   #Automatically dumps error in channels
+#DBNAME=
+#DATABASE_URL=
+#CMD_SUFFIX=
+#CUSTOM_RENAME=
+#FILENAME_AS_CAPTION=
+#FLOOD_SLEEP_THRESHOLD=
+
+# Number of pyrogram event workers; if you want to always queue videos as sent set to 1
+#WORKERS=1
+
+# list of links separated by commas to download on startup
+#DL_STUFF=
+
+# Channel id , message id, sticker id , Bool, codec name (and quality) for forward channel
 #FCHANNEL=
-#FCHANNEL_STAT=`
+#FCHANNEL_STAT=
+#FSTICKER=
+#FBANNER=True #Increases the frequency of banner messages in forward channels
+#FCODEC=
+#NO_BANNER=True #Disables banner messages for forward channel 
+
+# Channel short link
+#C_LINK=
+
+# Emoji or other beautifier to be added before captions
+#CAP_DECO=
+
+# Enable logging to log channel // off by default set value to True to enable 
+#LOGS_IN_CHANNEL=
+
+# Release Name
+#RELEASER=
+
+# Enable dumping leeched videos to bot pm and log_channel if available // On by default set value to False to disable 
+#DUMP_LEECH=
+#DUMP_CHANNEL= # Channel/Group id to dump leeched videos
+
+# Always deploy latest version of repo during startup // Off by default set to True to enable 
+#ALWAYS_DEPLOY_LATEST=
+
+# Lock encoding on startup
+#LOCK_ON_STARTUP=
+
+# Enable encoding chat action in bot // on by default…
+#ALLOW_ACTION=
+
+# if not added defaults to original repo
+#UPSTREAM_REPO=
+#UPSTREAM_BRANCH=
+
+#Aria2 & Qbit port
+#ARIA2_PORT=
+#QBIT_PORT=
+
+# Force timeout long downloads in seconds
+#ARIA2_DL_TIMEOUT=
+#QBIT_DL_TIMEOUT=
+
+#Telegraph
+#TELEGRAPH_API=
+#TELEGRAPH_AUTHOR=
+
+# Report failed processes
+#REPORT_FAILED=   #change to False to allow the two variables below 
+#REPORT_FAILED_DL=
+#REPORT_FAILED_ENC= 
+
+#PODI=False  #Bot will no longer keep dl paused while in download info
+
+#RSS
+#RSS_CHAT=
+#RSS_DELAY=
+#RSS_DIRECT=
+
+#USE_ANILIST=False #Disables Anilist
+#USE_CAPTION=False #Disables treating captions without newlines as filenames
+
+#UPLOAD_AS_VIDEO=True
+#UPLOAD_VIDEO_AS_SPOILER=True`
         """,
         buttons=[Button.inline("🔙 Back", data="ihelp")],
     )
