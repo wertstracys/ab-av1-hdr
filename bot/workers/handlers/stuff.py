@@ -271,7 +271,7 @@ async def temp_auth(event, args, client):
 
 
 async def icommands(event):
-    s = conf.CMD_SUFFIX or str()
+    conf.CMD_SUFFIX or str()
     await event.edit(
         f"""`
 APP_ID=
