@@ -125,13 +125,6 @@ async def start(event, args, client):
         msg,
         buttons=[
             [Button.inline("Help", data="ihelp")],
-            [
-                Button.url(
-                    "Source-Code (Original)",
-                    url="github.com/Nubuki-all/Enc",
-                ),
-                Button.url("Developer (Original)", url="t.me/Col_serra"),
-            ],
             [Button.url("Fork Maintainer", url="t.me/SamXD7")],
         ],
     )
@@ -178,13 +171,6 @@ async def beck(event):
         msg,
         buttons=[
             [Button.inline("Help", data="ihelp")],
-            [
-                Button.url(
-                    "Source-Code (Original)",
-                    url="github.com/Nubuki-all/Enc",
-                ),
-                Button.url("Developer (Original)", url="t.me/Col_serra"),
-            ],
             [Button.url("Fork Maintainer", url="t.me/SamXD7")],
         ],
     )
