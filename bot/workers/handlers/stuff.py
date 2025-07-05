@@ -316,7 +316,7 @@ OWNER=
 #FSTICKER=
 #FBANNER=True #Increases the frequency of banner messages in forward channels
 #FCODEC=
-#NO_BANNER=True #Disables banner messages for forward channel 
+#NO_BANNER=True #Disables banner messages for forward channel
 
 # Channel short link
 #C_LINK=
@@ -324,17 +324,17 @@ OWNER=
 # Emoji or other beautifier to be added before captions
 #CAP_DECO=
 
-# Enable logging to log channel // off by default set value to True to enable 
+# Enable logging to log channel // off by default set value to True to enable
 #LOGS_IN_CHANNEL=
 
 # Release Name
 #RELEASER=
 
-# Enable dumping leeched videos to bot pm and log_channel if available // On by default set value to False to disable 
+# Enable dumping leeched videos to bot pm and log_channel if available // On by default set value to False to disable
 #DUMP_LEECH=
 #DUMP_CHANNEL= # Channel/Group id to dump leeched videos
 
-# Always deploy latest version of repo during startup // Off by default set to True to enable 
+# Always deploy latest version of repo during startup // Off by default set to True to enable
 #ALWAYS_DEPLOY_LATEST=
 
 # Lock encoding on startup
@@ -360,9 +360,9 @@ OWNER=
 #TELEGRAPH_AUTHOR=
 
 # Report failed processes
-#REPORT_FAILED=   #change to False to allow the two variables below 
+#REPORT_FAILED=   #change to False to allow the two variables below
 #REPORT_FAILED_DL=
-#REPORT_FAILED_ENC= 
+#REPORT_FAILED_ENC=
 
 #PODI=False  #Bot will no longer keep dl paused while in download info
 
