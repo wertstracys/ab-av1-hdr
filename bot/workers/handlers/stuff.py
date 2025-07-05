@@ -273,7 +273,7 @@ async def temp_auth(event, args, client):
 async def icommands(event):
     conf.CMD_SUFFIX or str()
     await event.edit(
-        f"""`
+        """`
 APP_ID=
 API_HASH=
 BOT_TOKEN=
