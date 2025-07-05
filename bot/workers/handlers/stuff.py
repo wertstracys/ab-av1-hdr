@@ -124,8 +124,8 @@ async def start(event, args, client):
     await event.reply(
         msg,
         buttons=[
-            [Button.inline("Source-Code", data="ihelp")],
-            [Button.url("Fork Maintainer", url="t.me/SamXD7")],
+            [Button.inline("Container Code", data="ihelp")],
+            [Button.url("Image Maintainer", url="t.me/SamXD7")],
         ],
     )
 
@@ -136,7 +136,6 @@ async def help(event, args, client):
 
 async def ihelp(event):
     await event.edit(
-        "**Dockerfile**\n\n"
         """`
 FROM encodev/svtav1enc:hdr
 
@@ -175,8 +174,8 @@ async def beck(event):
     await event.edit(
         msg,
         buttons=[
-            [Button.inline("Source-Code", data="ihelp")],
-            [Button.url("Fork Maintainer", url="t.me/SamXD7")],
+            [Button.inline("Container Code", data="ihelp")],
+            [Button.url("Image Maintainer", url="t.me/SamXD7")],
         ],
     )
 
