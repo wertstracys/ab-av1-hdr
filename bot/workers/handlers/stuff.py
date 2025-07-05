@@ -136,7 +136,7 @@ async def help(event, args, client):
 
 async def ihelp(event):
     await event.edit(
-        "**Dockerfile**\n\n+"
+        "**Dockerfile**\n\n"
         """`
 FROM encodev/svtav1enc:hdr
 
